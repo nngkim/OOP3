@@ -1,9 +1,9 @@
 <?php
-
-class NonFiction extends Item {
+spl_autoload($args);
+class NonFictionBook extends Book {
     
    
-    protected $bookAuthor=array();
+    private $bookAuthor=array();
     private $edition;
     
     public function addAuthors(){
@@ -12,3 +12,5 @@ class NonFiction extends Item {
     }
 }
 
+$nonFiction = new NonFictionBook();
+$nonFiction ->addAuthors();
